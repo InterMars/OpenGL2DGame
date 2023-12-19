@@ -1,0 +1,3 @@
+/home/hp/Code/opengl/GAME/OpenGL2DGame/build/CMakeFiles/gamedemo.dir
+/home/hp/Code/opengl/GAME/OpenGL2DGame/build/CMakeFiles/edit_cache.dir
+/home/hp/Code/opengl/GAME/OpenGL2DGame/build/CMakeFiles/rebuild_cache.dir
