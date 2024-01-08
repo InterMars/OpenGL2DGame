@@ -40,9 +40,9 @@ void Game::Init()
    , static_cast<float>(this->Height)
    ,  0.0f
    , -1.0f
-   ,  1.0f);
+   ,  1.0f);  
 
-   ResourceManager::GetShader("sprite").Use().SetInteger("image", 0);
+   ResourceManager::GetShader("sprite").Use().SetInteger("image", 0);  
    ResourceManager::GetShader("sprite").SetMatrix4("projection", projection);
 
    Shader tmpSprietShader = ResourceManager::GetShader("sprite");
@@ -52,8 +52,8 @@ void Game::Init()
     // load textures
     ResourceManager::LoadTexture("openglDemo/resources/background.png", false, "background");
     ResourceManager::LoadTexture("openglDemo/resources/awesomeface.png", true, "face");
-    ResourceManager::LoadTexture("openglDemo/resources/block.png", false, "block");
-    ResourceManager::LoadTexture("openglDemo/resources/block_solid.png", false, "block_solid");
+    ResourceManager::LoadTexture("openglDemo/resources/block.png", true, "block");
+    ResourceManager::LoadTexture("openglDemo/resources/block_solid.png", true, "block_solid");
 
     GameLevel one;
     one.Load("openglDemo/level/one.lvl", this->Width, this->Height/2);
