@@ -129,6 +129,30 @@ gamedemo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamedemo.dir/build.make CMakeFiles/gamedemo.dir/build
 .PHONY : gamedemo/fast
 
+src/ball_object.o: src/ball_object.cpp.o
+.PHONY : src/ball_object.o
+
+# target to build an object file
+src/ball_object.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamedemo.dir/build.make CMakeFiles/gamedemo.dir/src/ball_object.cpp.o
+.PHONY : src/ball_object.cpp.o
+
+src/ball_object.i: src/ball_object.cpp.i
+.PHONY : src/ball_object.i
+
+# target to preprocess a source file
+src/ball_object.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamedemo.dir/build.make CMakeFiles/gamedemo.dir/src/ball_object.cpp.i
+.PHONY : src/ball_object.cpp.i
+
+src/ball_object.s: src/ball_object.cpp.s
+.PHONY : src/ball_object.s
+
+# target to generate assembly for a file
+src/ball_object.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamedemo.dir/build.make CMakeFiles/gamedemo.dir/src/ball_object.cpp.s
+.PHONY : src/ball_object.cpp.s
+
 src/game.o: src/game.cpp.o
 .PHONY : src/game.o
 
@@ -354,6 +378,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... gamedemo"
+	@echo "... src/ball_object.o"
+	@echo "... src/ball_object.i"
+	@echo "... src/ball_object.s"
 	@echo "... src/game.o"
 	@echo "... src/game.i"
 	@echo "... src/game.s"

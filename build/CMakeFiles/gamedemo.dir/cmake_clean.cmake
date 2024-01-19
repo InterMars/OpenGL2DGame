@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "/home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/bin/gamedemo"
   "/home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/bin/gamedemo.pdb"
+  "CMakeFiles/gamedemo.dir/src/ball_object.cpp.o"
+  "CMakeFiles/gamedemo.dir/src/ball_object.cpp.o.d"
   "CMakeFiles/gamedemo.dir/src/game.cpp.o"
   "CMakeFiles/gamedemo.dir/src/game.cpp.o.d"
   "CMakeFiles/gamedemo.dir/src/game_level.cpp.o"

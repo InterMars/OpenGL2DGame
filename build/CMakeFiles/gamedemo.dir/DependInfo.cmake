@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/src/glad/src/glad.c" "CMakeFiles/gamedemo.dir/src/glad/src/glad.c.o" "gcc" "CMakeFiles/gamedemo.dir/src/glad/src/glad.c.o.d"
+  "/home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/src/ball_object.cpp" "CMakeFiles/gamedemo.dir/src/ball_object.cpp.o" "gcc" "CMakeFiles/gamedemo.dir/src/ball_object.cpp.o.d"
   "/home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/src/game.cpp" "CMakeFiles/gamedemo.dir/src/game.cpp.o" "gcc" "CMakeFiles/gamedemo.dir/src/game.cpp.o.d"
   "/home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/src/game_level.cpp" "CMakeFiles/gamedemo.dir/src/game_level.cpp.o" "gcc" "CMakeFiles/gamedemo.dir/src/game_level.cpp.o.d"
   "/home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/src/game_object.cpp" "CMakeFiles/gamedemo.dir/src/game_object.cpp.o" "gcc" "CMakeFiles/gamedemo.dir/src/game_object.cpp.o.d"

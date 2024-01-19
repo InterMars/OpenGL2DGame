@@ -11,7 +11,7 @@ BallObject::BallObject(glm::vec2 pos, float radius, glm::vec2 velocity, Texture2
 glm::vec2 BallObject::Move(float dt, unsigned int window_width) {
     if(!this->Stuck) {
         this->Position += this->Velocity * dt;
-        
+
         if(this->Position.x <= 0.0f) {
             this->Velocity.x = -this->Velocity.x;
             this->Position.x = 0.0f;

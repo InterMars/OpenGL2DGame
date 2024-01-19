@@ -12,6 +12,7 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <vector>
+
 #include "game_level.h"
 // Represents the current state of the game
 enum GameState {
@@ -19,9 +20,19 @@ enum GameState {
     GAME_MENU,
     GAME_WIN
 };
+enum Direction {
+    UP,
+    RIGHT,
+    DOWN,
+    LEFT
+};
+typedef std::tuple<bool, Direction, glm::vec2> Collision;
 
 const glm::vec2 PLAYER_SIZE(100.0f, 20.0f);
 const float PLAYER_VELOCITY(500.0f);
+
+const glm::vec2 INITIAL_BALL_VELOCITY(100.0f, -350.0f);
+const float BALL_RADIUS = 12.5f;
 // Game holds all game-related state and functionality.
 // Combines all game-related data into a single class for
 // easy access to each of the components and manageability.
@@ -43,6 +54,10 @@ class Game {
     void ProcessInput(float dt);
     void Update(float dt);
     void Render();
+    void DoCollisions();
+
+    void ResetLevel();
+    void ResetPlayer();
 };
 
 #endif  // NOLINT
