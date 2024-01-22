@@ -13,6 +13,7 @@
 #include "sprite_renderer.h"
 #include "game_object.h"
 #include "ball_object.h"
+#include <iostream>
 
 SpriteRenderer *Renderer;
 GameObject *Player;
@@ -21,7 +22,6 @@ BallObject *Ball;
 Game::Game(unsigned int width, unsigned int height) 
     : State(GAME_ACTIVE), Keys(), Width(width), Height(height)
 { 
-
 }
 
 Game::~Game()
@@ -92,6 +92,7 @@ void Game::Update(float dt)
     this->DoCollisions();
 
     if(Ball->Position.y >= this->Height) {
+        
         this->ResetLevel();
         this->ResetPlayer();
     }
@@ -106,11 +107,16 @@ void Game::ProcessInput(float dt)
         if(this->Keys[GLFW_KEY_A]) {
             if(Player->Position.x >= 0.0f) {
                 Player->Position.x -= velocity;
+                if (Ball->Stuck)
+                    Ball->Position.x -= velocity;
+
             }
         }
         if(this->Keys[GLFW_KEY_D]) {
             if(Player->Position.x < this->Width - Player->Size.x) {
                 Player->Position.x += velocity;
+                if (Ball->Stuck)
+                    Ball->Position.x += velocity;
             }
         }
 
