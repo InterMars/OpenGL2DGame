@@ -153,10 +153,24 @@ CMakeFiles/gamedemo.dir/src/game_object.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gamedemo.dir/src/game_object.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/src/game_object.cpp -o CMakeFiles/gamedemo.dir/src/game_object.cpp.s
 
+CMakeFiles/gamedemo.dir/src/particle_generator.cpp.o: CMakeFiles/gamedemo.dir/flags.make
+CMakeFiles/gamedemo.dir/src/particle_generator.cpp.o: /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/src/particle_generator.cpp
+CMakeFiles/gamedemo.dir/src/particle_generator.cpp.o: CMakeFiles/gamedemo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hp/Code/opengl/GAME/OpenGL2DGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/gamedemo.dir/src/particle_generator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamedemo.dir/src/particle_generator.cpp.o -MF CMakeFiles/gamedemo.dir/src/particle_generator.cpp.o.d -o CMakeFiles/gamedemo.dir/src/particle_generator.cpp.o -c /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/src/particle_generator.cpp
+
+CMakeFiles/gamedemo.dir/src/particle_generator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gamedemo.dir/src/particle_generator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/src/particle_generator.cpp > CMakeFiles/gamedemo.dir/src/particle_generator.cpp.i
+
+CMakeFiles/gamedemo.dir/src/particle_generator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gamedemo.dir/src/particle_generator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/src/particle_generator.cpp -o CMakeFiles/gamedemo.dir/src/particle_generator.cpp.s
+
 CMakeFiles/gamedemo.dir/src/resource_manager.cpp.o: CMakeFiles/gamedemo.dir/flags.make
 CMakeFiles/gamedemo.dir/src/resource_manager.cpp.o: /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/src/resource_manager.cpp
 CMakeFiles/gamedemo.dir/src/resource_manager.cpp.o: CMakeFiles/gamedemo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hp/Code/opengl/GAME/OpenGL2DGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/gamedemo.dir/src/resource_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hp/Code/opengl/GAME/OpenGL2DGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/gamedemo.dir/src/resource_manager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamedemo.dir/src/resource_manager.cpp.o -MF CMakeFiles/gamedemo.dir/src/resource_manager.cpp.o.d -o CMakeFiles/gamedemo.dir/src/resource_manager.cpp.o -c /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/src/resource_manager.cpp
 
 CMakeFiles/gamedemo.dir/src/resource_manager.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/gamedemo.dir/src/resource_manager.cpp.s: cmake_force
 CMakeFiles/gamedemo.dir/src/shader.cpp.o: CMakeFiles/gamedemo.dir/flags.make
 CMakeFiles/gamedemo.dir/src/shader.cpp.o: /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/src/shader.cpp
 CMakeFiles/gamedemo.dir/src/shader.cpp.o: CMakeFiles/gamedemo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hp/Code/opengl/GAME/OpenGL2DGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/gamedemo.dir/src/shader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hp/Code/opengl/GAME/OpenGL2DGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/gamedemo.dir/src/shader.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamedemo.dir/src/shader.cpp.o -MF CMakeFiles/gamedemo.dir/src/shader.cpp.o.d -o CMakeFiles/gamedemo.dir/src/shader.cpp.o -c /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/src/shader.cpp
 
 CMakeFiles/gamedemo.dir/src/shader.cpp.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/gamedemo.dir/src/shader.cpp.s: cmake_force
 CMakeFiles/gamedemo.dir/src/sprite_renderer.cpp.o: CMakeFiles/gamedemo.dir/flags.make
 CMakeFiles/gamedemo.dir/src/sprite_renderer.cpp.o: /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/src/sprite_renderer.cpp
 CMakeFiles/gamedemo.dir/src/sprite_renderer.cpp.o: CMakeFiles/gamedemo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hp/Code/opengl/GAME/OpenGL2DGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/gamedemo.dir/src/sprite_renderer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hp/Code/opengl/GAME/OpenGL2DGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/gamedemo.dir/src/sprite_renderer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamedemo.dir/src/sprite_renderer.cpp.o -MF CMakeFiles/gamedemo.dir/src/sprite_renderer.cpp.o.d -o CMakeFiles/gamedemo.dir/src/sprite_renderer.cpp.o -c /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/src/sprite_renderer.cpp
 
 CMakeFiles/gamedemo.dir/src/sprite_renderer.cpp.i: cmake_force
@@ -198,7 +212,7 @@ CMakeFiles/gamedemo.dir/src/sprite_renderer.cpp.s: cmake_force
 CMakeFiles/gamedemo.dir/src/texture.cpp.o: CMakeFiles/gamedemo.dir/flags.make
 CMakeFiles/gamedemo.dir/src/texture.cpp.o: /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/src/texture.cpp
 CMakeFiles/gamedemo.dir/src/texture.cpp.o: CMakeFiles/gamedemo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hp/Code/opengl/GAME/OpenGL2DGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/gamedemo.dir/src/texture.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hp/Code/opengl/GAME/OpenGL2DGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/gamedemo.dir/src/texture.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamedemo.dir/src/texture.cpp.o -MF CMakeFiles/gamedemo.dir/src/texture.cpp.o.d -o CMakeFiles/gamedemo.dir/src/texture.cpp.o -c /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/src/texture.cpp
 
 CMakeFiles/gamedemo.dir/src/texture.cpp.i: cmake_force
@@ -217,6 +231,7 @@ gamedemo_OBJECTS = \
 "CMakeFiles/gamedemo.dir/src/game.cpp.o" \
 "CMakeFiles/gamedemo.dir/src/game_level.cpp.o" \
 "CMakeFiles/gamedemo.dir/src/game_object.cpp.o" \
+"CMakeFiles/gamedemo.dir/src/particle_generator.cpp.o" \
 "CMakeFiles/gamedemo.dir/src/resource_manager.cpp.o" \
 "CMakeFiles/gamedemo.dir/src/shader.cpp.o" \
 "CMakeFiles/gamedemo.dir/src/sprite_renderer.cpp.o" \
@@ -231,6 +246,7 @@ gamedemo_EXTERNAL_OBJECTS =
 /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/bin/gamedemo: CMakeFiles/gamedemo.dir/src/game.cpp.o
 /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/bin/gamedemo: CMakeFiles/gamedemo.dir/src/game_level.cpp.o
 /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/bin/gamedemo: CMakeFiles/gamedemo.dir/src/game_object.cpp.o
+/home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/bin/gamedemo: CMakeFiles/gamedemo.dir/src/particle_generator.cpp.o
 /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/bin/gamedemo: CMakeFiles/gamedemo.dir/src/resource_manager.cpp.o
 /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/bin/gamedemo: CMakeFiles/gamedemo.dir/src/shader.cpp.o
 /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/bin/gamedemo: CMakeFiles/gamedemo.dir/src/sprite_renderer.cpp.o
@@ -241,7 +257,7 @@ gamedemo_EXTERNAL_OBJECTS =
 /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/bin/gamedemo: /usr/lib/x86_64-linux-gnu/libGLU.so
 /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/bin/gamedemo: /usr/lib/x86_64-linux-gnu/libglfw.so.3.3
 /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/bin/gamedemo: CMakeFiles/gamedemo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hp/Code/opengl/GAME/OpenGL2DGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/bin/gamedemo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hp/Code/opengl/GAME/OpenGL2DGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/bin/gamedemo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gamedemo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

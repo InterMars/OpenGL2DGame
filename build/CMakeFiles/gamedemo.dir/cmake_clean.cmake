@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/gamedemo.dir/src/glad/src/glad.c.o.d"
   "CMakeFiles/gamedemo.dir/src/main.cpp.o"
   "CMakeFiles/gamedemo.dir/src/main.cpp.o.d"
+  "CMakeFiles/gamedemo.dir/src/particle_generator.cpp.o"
+  "CMakeFiles/gamedemo.dir/src/particle_generator.cpp.o.d"
   "CMakeFiles/gamedemo.dir/src/resource_manager.cpp.o"
   "CMakeFiles/gamedemo.dir/src/resource_manager.cpp.o.d"
   "CMakeFiles/gamedemo.dir/src/shader.cpp.o"

@@ -13,9 +13,11 @@
 #include "sprite_renderer.h"
 #include "game_object.h"
 #include "ball_object.h"
+#include "particle_generator.h"
 #include <iostream>
 
 SpriteRenderer *Renderer;
+ParticleGenerator *Particles;
 GameObject *Player;
 BallObject *Ball;
 
@@ -29,6 +31,7 @@ Game::~Game()
     delete Renderer;
     delete Player;
     delete Ball;
+    delete Particles;
 }
 
 void Game::Init()
@@ -40,20 +43,23 @@ void Game::Init()
    , nullptr
    , "sprite");
 
+    ResourceManager::LoadShader(
+        "openglDemo/shader/particle.vs",
+        "openglDemo/shader/particle.fs",
+        nullptr,
+        "particle"
+    );
+
+
    glm::mat4 projection = glm::ortho(
     0.0f
    , static_cast<float>(this->Width)
    , static_cast<float>(this->Height)
    ,  0.0f
    , -1.0f
-   ,  1.0f);  
+   ,  1.0f
+   );  
 
-   ResourceManager::GetShader("sprite").Use().SetInteger("image", 0);  
-   ResourceManager::GetShader("sprite").SetMatrix4("projection", projection);
-
-   Shader tmpSprietShader = ResourceManager::GetShader("sprite");
-   Renderer = new SpriteRenderer(tmpSprietShader);
-//    ResourceManager::LoadTexture("openglDemo/resources/awesomeface.png", true, "face");
 
     // load textures
     ResourceManager::LoadTexture("openglDemo/resources/background.png", false, "background");
@@ -61,6 +67,17 @@ void Game::Init()
     ResourceManager::LoadTexture("openglDemo/resources/block.png", true, "block");
     ResourceManager::LoadTexture("openglDemo/resources/block_solid.png", true, "block_solid");
     ResourceManager::LoadTexture("openglDemo/resources/paddle.png", true, "paddle");
+    ResourceManager::LoadTexture("openglDemo/resources/particle.png", true, "particle");
+
+   ResourceManager::GetShader("sprite").Use().SetInteger("image", 0);  
+   ResourceManager::GetShader("sprite").SetMatrix4("projection", projection);
+   Shader tmpSprietShader = ResourceManager::GetShader("sprite");
+   Renderer = new SpriteRenderer(tmpSprietShader);
+
+    ResourceManager::GetShader("particle").Use().SetInteger("sprite", 0);
+    ResourceManager::GetShader("particle").Use().SetMatrix4("projection", projection);
+    Shader tmpParticleShader = ResourceManager::GetShader("particle");
+    Particles = new ParticleGenerator(tmpParticleShader, ResourceManager::GetTexture("particle"), 500);
 
     GameLevel one;
     one.Load("openglDemo/level/one.lvl", this->Width, this->Height/2);
@@ -90,7 +107,7 @@ void Game::Update(float dt)
     Ball->Move(dt, this->Width);
 
     this->DoCollisions();
-
+    Particles->Update(dt, *Ball, 2, glm::vec2(Ball->Radius)/2.0f);
     if(Ball->Position.y >= this->Height) {
         
         this->ResetLevel();
@@ -135,7 +152,7 @@ void Game::Render()
         this->Levels[this->Level].Draw(*Renderer);  
 
         Player->Draw(*Renderer);
-
+        Particles->Draw();
         Ball->Draw(*Renderer);
     }
 }
