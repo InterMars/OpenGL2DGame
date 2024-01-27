@@ -9,7 +9,7 @@ void GameLevel::Load(const char* file, unsigned int levelWidth, unsigned int lev
     GameLevel level;
     std::string line;
     std::ifstream fstream(file);
-    std::vector<std::vector<unsigned int>> tileData;
+    // std::vector<std::vector<unsigned int>> tileData;
 
     if(fstream){
         while(std::getline(fstream, line)){
@@ -18,11 +18,11 @@ void GameLevel::Load(const char* file, unsigned int levelWidth, unsigned int lev
             while (sstream >> tileCode){
                 row.push_back(tileCode);
             }
-            tileData.push_back(row);
+            tileDatabuffer.push_back(row);
         }
-        if(tileData.size() > 0){
-            this->init(tileData, levelWidth, levelHeight);
-        }
+    }
+    if(tileDatabuffer.size() > 0){
+        this->init(tileDatabuffer, levelWidth, levelHeight);
     }
 }
 

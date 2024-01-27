@@ -22,6 +22,8 @@ class GameLevel {
     private:
         void init(std::vector<std::vector<unsigned int>> tileData, unsigned int levelWidth,unsigned int levelHeight);
 
+    private:
+        std::vector<std::vector<unsigned int>> tileDatabuffer;
 };
 
 #endif
