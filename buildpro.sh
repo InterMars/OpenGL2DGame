@@ -1,16 +1,27 @@
 #!/bin/sh
 argument1=${1:-make}
-if [ "$argument1" = "cleanbuild" ]; then
+
+echo "input is $argument1"
+
+if [ "$argument1" = "clean" ]; then
+    rm ./openglDemo/bin/gamedemo
     if [ -d "build" ]; then
         rm -r build
+        exit 0
     fi
-    exit 0
+elif [ "$argument1" = "debug" ]; then
+    if [ ! -d "build" ]; then mkdir build; fi
+    cd build
+    cmake ../openglDemo/
+    make -j8
+    cd ../
+    gdb ./openglDemo/bin/gamedemo
+else
+    nproc=8
+    if [ ! -d "build" ]; then mkdir build; fi
+    cd build
+    cmake ../openglDemo/
+    make -j"$nproc"
+    cd ../
+    ./openglDemo/bin/gamedemo
 fi
-
-nproc=8
-if [ ! -d "build" ]; then mkdir build; fi
-cd build
-cmake ../openglDemo/
-make -j"$nproc"
-cd ../
-./openglDemo/bin/gamedemo
