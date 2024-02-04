@@ -162,6 +162,18 @@ void Game::ProcessInput(float dt)
         if(this->Keys[GLFW_KEY_SPACE]) {
             Ball->Stuck = false;
         }
+        if(this->Keys[GLFW_KEY_0]) {
+            Effects->Confuse = false;
+            Effects->Chaos = false;
+        }
+        if(this->Keys[GLFW_KEY_1]) {
+            Effects->Confuse = true;
+            Effects->Chaos = false;
+        }
+        if(this->Keys[GLFW_KEY_2]) {
+            Effects->Confuse = false;
+            Effects->Chaos = true;
+        }
     }
 }
 
