@@ -158,21 +158,39 @@ void Game::ProcessInput(float dt)
                     Ball->Position.x += velocity;
             }
         }
-
         if(this->Keys[GLFW_KEY_SPACE]) {
             Ball->Stuck = false;
         }
         if(this->Keys[GLFW_KEY_0]) {
+            Effects->Sharpen = false;
+            Effects->GrayScale = false;
             Effects->Confuse = false;
             Effects->Chaos = false;
         }
         if(this->Keys[GLFW_KEY_1]) {
+            Effects->Sharpen = false;
             Effects->Confuse = true;
             Effects->Chaos = false;
+            Effects->GrayScale = false;
         }
         if(this->Keys[GLFW_KEY_2]) {
+            Effects->Sharpen = false;
             Effects->Confuse = false;
+            Effects->GrayScale = false;
             Effects->Chaos = true;
+        }
+        if(this->Keys[GLFW_KEY_3]) {
+            Effects->Sharpen = false;
+            Effects->GrayScale = true;
+            Effects->Confuse = false;
+            Effects->Chaos = false;
+        }
+
+        if(this->Keys[GLFW_KEY_4]) {
+            Effects->GrayScale = false;
+            Effects->Confuse = false;
+            Effects->Chaos = false;
+            Effects->Sharpen = true;
         }
     }
 }
@@ -184,7 +202,7 @@ void Game::Render()
         Texture2D tmptexture = ResourceManager::GetTexture("background");
         Renderer->DrawSprite(tmptexture, glm::vec2(0.0f, 0.0f), glm::vec2(this->Width, this->Height), 0.0f);
 
-        this->Levels[this->Level].Draw(*Renderer);  
+        this->Levels[this->Level].Draw(*Renderer);
 
         Player->Draw(*Renderer);
         Particles->Draw();

@@ -3,7 +3,7 @@
 #include <iostream>
 
 PostProcessor::PostProcessor(Shader shader, unsigned int width, unsigned int height)
-    :PostProcessingShader(shader), Texture(), Width(width), Height(height), Confuse(false), Chaos(false), Shake(false)
+    :PostProcessingShader(shader), Texture(), Width(width), Height(height), Confuse(false), Chaos(false), Shake(false), GrayScale(false), Sharpen(false)
     {
         glGenFramebuffers(1, &this->MSFBO);
         glGenFramebuffers(1, &this->FBO);
@@ -54,7 +54,13 @@ PostProcessor::PostProcessor(Shader shader, unsigned int width, unsigned int hei
             2.0f / 16.0f, 4.0f / 16.0f, 2.0f / 16.0f,
             1.0f / 16.0f, 2.0f / 16.0f, 1.0f / 16.0f
         };
-        glUniform1fv(glGetUniformLocation(this->PostProcessingShader.ID, "blur_kernel"), 9, blur_kernel);    
+        glUniform1fv(glGetUniformLocation(this->PostProcessingShader.ID, "blur_kernel"), 9, blur_kernel);  
+        int sharpen_kernel[9] = {
+            2,  2,  2,
+            2, -15, 2,
+            2,  2,  2            
+        };
+        glUniform1iv(glGetUniformLocation(this->PostProcessingShader.ID, "sharpen_kernel"), 9, sharpen_kernel);
     }
 
 void PostProcessor::BeginRender() {
@@ -76,6 +82,8 @@ void PostProcessor::Render(float time) {
     this->PostProcessingShader.SetInteger("confuse", this->Confuse);
     this->PostProcessingShader.SetInteger("chaos", this->Chaos);
     this->PostProcessingShader.SetInteger("shake", this->Shake);
+    this->PostProcessingShader.SetInteger("grayscale", this->GrayScale);
+    this->PostProcessingShader.SetInteger("sharpen", this->Sharpen);   
 
     glActiveTexture(GL_TEXTURE0);
     this->Texture.Bind();

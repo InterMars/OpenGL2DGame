@@ -16,7 +16,7 @@ void main()
     {
         float strength = 0.3;
         vec2 pos = vec2(texture.x + sin(time) * strength, texture.y + cos(time) * strength);        
-        TexCoords = pos;
+        TexCoords = texture;
     }
     else if (confuse)
     {
@@ -26,9 +26,11 @@ void main()
     {
         TexCoords = texture;
     }
-    if (shake)
+    if (shake)  // the effect of shaking dynamically over time.
     {
+        
         float strength = 0.01;
+        // cos(10 * angle)
         gl_Position.x += cos(time * 10) * strength;        
         gl_Position.y += cos(time * 15) * strength;        
     }
