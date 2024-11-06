@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo
+CMAKE_SOURCE_DIR = /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hp/Code/opengl/GAME/OpenGL2DGame/build
+CMAKE_BINARY_DIR = /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hp/Code/opengl/GAME/OpenGL2DGame/build/CMakeFiles /home/hp/Code/opengl/GAME/OpenGL2DGame/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/build/CMakeFiles /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hp/Code/opengl/GAME/OpenGL2DGame/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,30 @@ gamedemo: cmake_check_build_system
 gamedemo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamedemo.dir/build.make CMakeFiles/gamedemo.dir/build
 .PHONY : gamedemo/fast
+
+lib/glad/src/glad.o: lib/glad/src/glad.c.o
+.PHONY : lib/glad/src/glad.o
+
+# target to build an object file
+lib/glad/src/glad.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamedemo.dir/build.make CMakeFiles/gamedemo.dir/lib/glad/src/glad.c.o
+.PHONY : lib/glad/src/glad.c.o
+
+lib/glad/src/glad.i: lib/glad/src/glad.c.i
+.PHONY : lib/glad/src/glad.i
+
+# target to preprocess a source file
+lib/glad/src/glad.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamedemo.dir/build.make CMakeFiles/gamedemo.dir/lib/glad/src/glad.c.i
+.PHONY : lib/glad/src/glad.c.i
+
+lib/glad/src/glad.s: lib/glad/src/glad.c.s
+.PHONY : lib/glad/src/glad.s
+
+# target to generate assembly for a file
+lib/glad/src/glad.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamedemo.dir/build.make CMakeFiles/gamedemo.dir/lib/glad/src/glad.c.s
+.PHONY : lib/glad/src/glad.c.s
 
 src/ball_object.o: src/ball_object.cpp.o
 .PHONY : src/ball_object.o
@@ -225,30 +249,6 @@ src/game_object.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamedemo.dir/build.make CMakeFiles/gamedemo.dir/src/game_object.cpp.s
 .PHONY : src/game_object.cpp.s
 
-src/glad/src/glad.o: src/glad/src/glad.c.o
-.PHONY : src/glad/src/glad.o
-
-# target to build an object file
-src/glad/src/glad.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamedemo.dir/build.make CMakeFiles/gamedemo.dir/src/glad/src/glad.c.o
-.PHONY : src/glad/src/glad.c.o
-
-src/glad/src/glad.i: src/glad/src/glad.c.i
-.PHONY : src/glad/src/glad.i
-
-# target to preprocess a source file
-src/glad/src/glad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamedemo.dir/build.make CMakeFiles/gamedemo.dir/src/glad/src/glad.c.i
-.PHONY : src/glad/src/glad.c.i
-
-src/glad/src/glad.s: src/glad/src/glad.c.s
-.PHONY : src/glad/src/glad.s
-
-# target to generate assembly for a file
-src/glad/src/glad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamedemo.dir/build.make CMakeFiles/gamedemo.dir/src/glad/src/glad.c.s
-.PHONY : src/glad/src/glad.c.s
-
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -296,6 +296,30 @@ src/particle_generator.s: src/particle_generator.cpp.s
 src/particle_generator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamedemo.dir/build.make CMakeFiles/gamedemo.dir/src/particle_generator.cpp.s
 .PHONY : src/particle_generator.cpp.s
+
+src/post_processor.o: src/post_processor.cpp.o
+.PHONY : src/post_processor.o
+
+# target to build an object file
+src/post_processor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamedemo.dir/build.make CMakeFiles/gamedemo.dir/src/post_processor.cpp.o
+.PHONY : src/post_processor.cpp.o
+
+src/post_processor.i: src/post_processor.cpp.i
+.PHONY : src/post_processor.i
+
+# target to preprocess a source file
+src/post_processor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamedemo.dir/build.make CMakeFiles/gamedemo.dir/src/post_processor.cpp.i
+.PHONY : src/post_processor.cpp.i
+
+src/post_processor.s: src/post_processor.cpp.s
+.PHONY : src/post_processor.s
+
+# target to generate assembly for a file
+src/post_processor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamedemo.dir/build.make CMakeFiles/gamedemo.dir/src/post_processor.cpp.s
+.PHONY : src/post_processor.cpp.s
 
 src/resource_manager.o: src/resource_manager.cpp.o
 .PHONY : src/resource_manager.o
@@ -402,6 +426,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... gamedemo"
+	@echo "... lib/glad/src/glad.o"
+	@echo "... lib/glad/src/glad.i"
+	@echo "... lib/glad/src/glad.s"
 	@echo "... src/ball_object.o"
 	@echo "... src/ball_object.i"
 	@echo "... src/ball_object.s"
@@ -414,15 +441,15 @@ help:
 	@echo "... src/game_object.o"
 	@echo "... src/game_object.i"
 	@echo "... src/game_object.s"
-	@echo "... src/glad/src/glad.o"
-	@echo "... src/glad/src/glad.i"
-	@echo "... src/glad/src/glad.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
 	@echo "... src/particle_generator.o"
 	@echo "... src/particle_generator.i"
 	@echo "... src/particle_generator.s"
+	@echo "... src/post_processor.o"
+	@echo "... src/post_processor.i"
+	@echo "... src/post_processor.s"
 	@echo "... src/resource_manager.o"
 	@echo "... src/resource_manager.i"
 	@echo "... src/resource_manager.s"

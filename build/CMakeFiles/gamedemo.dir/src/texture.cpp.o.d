@@ -1,5 +1,5 @@
 CMakeFiles/gamedemo.dir/src/texture.cpp.o: \
- /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/src/texture.cpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/src/texture.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -146,5 +146,6 @@ CMakeFiles/gamedemo.dir/src/texture.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/inc/texture.h \
- /usr/local/include/glad/glad.h /usr/local/include/KHR/khrplatform.h
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/inc/texture.h \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glad/include/glad/glad.h \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glad/include/KHR/khrplatform.h

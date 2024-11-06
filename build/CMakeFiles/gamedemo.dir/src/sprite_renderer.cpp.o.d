@@ -1,8 +1,9 @@
 CMakeFiles/gamedemo.dir/src/sprite_renderer.cpp.o: \
- /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/src/sprite_renderer.cpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/src/sprite_renderer.cpp \
  /usr/include/stdc-predef.h \
- /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/inc/sprite_renderer.h \
- /usr/local/include/glad/glad.h /usr/local/include/KHR/khrplatform.h \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/inc/sprite_renderer.h \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glad/include/glad/glad.h \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glad/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -18,7 +19,8 @@ CMakeFiles/gamedemo.dir/src/sprite_renderer.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/glm/glm.hpp /usr/include/glm/detail/_fixes.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/glm.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/_fixes.hpp \
  /usr/include/c++/11/cmath \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -90,11 +92,7 @@ CMakeFiles/gamedemo.dir/src/sprite_renderer.cpp.o: \
  /usr/include/c++/11/tr1/modified_bessel_func.tcc \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
- /usr/include/c++/11/tr1/riemann_zeta.tcc \
- /usr/include/glm/detail/setup.hpp /usr/include/c++/11/cassert \
- /usr/include/assert.h /usr/include/c++/11/cstddef \
- /usr/include/glm/simd/platform.h /usr/include/c++/11/cstdint \
- /usr/include/c++/11/climits \
+ /usr/include/c++/11/tr1/riemann_zeta.tcc /usr/include/c++/11/climits \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
@@ -105,131 +103,189 @@ CMakeFiles/gamedemo.dir/src/sprite_renderer.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/c++/11/cfloat \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
- /usr/include/glm/fwd.hpp /usr/include/glm/detail/qualifier.hpp \
- /usr/include/glm/detail/setup.hpp /usr/include/glm/vec2.hpp \
- /usr/include/glm/ext/vector_bool2.hpp \
- /usr/include/glm/detail/type_vec2.hpp \
- /usr/include/glm/detail/type_vec2.inl \
- /usr/include/glm/detail/compute_vector_relational.hpp \
- /usr/include/glm/ext/vector_bool2_precision.hpp \
- /usr/include/glm/ext/vector_float2.hpp \
- /usr/include/glm/ext/vector_float2_precision.hpp \
- /usr/include/glm/ext/vector_double2.hpp \
- /usr/include/glm/ext/vector_double2_precision.hpp \
- /usr/include/glm/ext/vector_int2.hpp \
- /usr/include/glm/ext/vector_int2_sized.hpp \
- /usr/include/glm/ext/scalar_int_sized.hpp \
- /usr/include/glm/detail/setup.hpp /usr/include/glm/ext/vector_uint2.hpp \
- /usr/include/glm/ext/vector_uint2_sized.hpp \
- /usr/include/glm/ext/scalar_uint_sized.hpp /usr/include/glm/vec3.hpp \
- /usr/include/glm/ext/vector_bool3.hpp \
- /usr/include/glm/detail/type_vec3.hpp \
- /usr/include/glm/detail/type_vec3.inl \
- /usr/include/glm/ext/vector_bool3_precision.hpp \
- /usr/include/glm/ext/vector_float3.hpp \
- /usr/include/glm/ext/vector_float3_precision.hpp \
- /usr/include/glm/ext/vector_double3.hpp \
- /usr/include/glm/ext/vector_double3_precision.hpp \
- /usr/include/glm/ext/vector_int3.hpp \
- /usr/include/glm/ext/vector_int3_sized.hpp \
- /usr/include/glm/ext/vector_uint3.hpp \
- /usr/include/glm/ext/vector_uint3_sized.hpp /usr/include/glm/vec4.hpp \
- /usr/include/glm/ext/vector_bool4.hpp \
- /usr/include/glm/detail/type_vec4.hpp \
- /usr/include/glm/detail/type_vec4.inl \
- /usr/include/glm/ext/vector_bool4_precision.hpp \
- /usr/include/glm/ext/vector_float4.hpp \
- /usr/include/glm/ext/vector_float4_precision.hpp \
- /usr/include/glm/ext/vector_double4.hpp \
- /usr/include/glm/ext/vector_double4_precision.hpp \
- /usr/include/glm/ext/vector_int4.hpp \
- /usr/include/glm/ext/vector_int4_sized.hpp \
- /usr/include/glm/ext/vector_uint4.hpp \
- /usr/include/glm/ext/vector_uint4_sized.hpp /usr/include/glm/mat2x2.hpp \
- /usr/include/glm/ext/matrix_double2x2.hpp \
- /usr/include/glm/detail/type_mat2x2.hpp \
- /usr/include/glm/detail/type_mat2x2.inl /usr/include/glm/matrix.hpp \
- /usr/include/glm/mat2x3.hpp /usr/include/glm/ext/matrix_double2x3.hpp \
- /usr/include/glm/detail/type_mat2x3.hpp \
- /usr/include/glm/detail/type_mat2x3.inl \
- /usr/include/glm/ext/matrix_double2x3_precision.hpp \
- /usr/include/glm/ext/matrix_float2x3.hpp \
- /usr/include/glm/ext/matrix_float2x3_precision.hpp \
- /usr/include/glm/mat2x4.hpp /usr/include/glm/ext/matrix_double2x4.hpp \
- /usr/include/glm/detail/type_mat2x4.hpp \
- /usr/include/glm/detail/type_mat2x4.inl \
- /usr/include/glm/ext/matrix_double2x4_precision.hpp \
- /usr/include/glm/ext/matrix_float2x4.hpp \
- /usr/include/glm/ext/matrix_float2x4_precision.hpp \
- /usr/include/glm/mat3x2.hpp /usr/include/glm/ext/matrix_double3x2.hpp \
- /usr/include/glm/detail/type_mat3x2.hpp \
- /usr/include/glm/detail/type_mat3x2.inl \
- /usr/include/glm/ext/matrix_double3x2_precision.hpp \
- /usr/include/glm/ext/matrix_float3x2.hpp \
- /usr/include/glm/ext/matrix_float3x2_precision.hpp \
- /usr/include/glm/mat3x3.hpp /usr/include/glm/ext/matrix_double3x3.hpp \
- /usr/include/glm/detail/type_mat3x3.hpp \
- /usr/include/glm/detail/type_mat3x3.inl \
- /usr/include/glm/ext/matrix_double3x3_precision.hpp \
- /usr/include/glm/ext/matrix_float3x3.hpp \
- /usr/include/glm/ext/matrix_float3x3_precision.hpp \
- /usr/include/glm/mat3x4.hpp /usr/include/glm/ext/matrix_double3x4.hpp \
- /usr/include/glm/detail/type_mat3x4.hpp \
- /usr/include/glm/detail/type_mat3x4.inl \
- /usr/include/glm/ext/matrix_double3x4_precision.hpp \
- /usr/include/glm/ext/matrix_float3x4.hpp \
- /usr/include/glm/ext/matrix_float3x4_precision.hpp \
- /usr/include/glm/mat4x2.hpp /usr/include/glm/ext/matrix_double4x2.hpp \
- /usr/include/glm/detail/type_mat4x2.hpp \
- /usr/include/glm/detail/type_mat4x2.inl \
- /usr/include/glm/ext/matrix_double4x2_precision.hpp \
- /usr/include/glm/ext/matrix_float4x2.hpp \
- /usr/include/glm/ext/matrix_float4x2_precision.hpp \
- /usr/include/glm/mat4x3.hpp /usr/include/glm/ext/matrix_double4x3.hpp \
- /usr/include/glm/detail/type_mat4x3.hpp \
- /usr/include/glm/detail/type_mat4x3.inl \
- /usr/include/glm/ext/matrix_double4x3_precision.hpp \
- /usr/include/glm/ext/matrix_float4x3.hpp \
- /usr/include/glm/ext/matrix_float4x3_precision.hpp \
- /usr/include/glm/mat4x4.hpp /usr/include/glm/ext/matrix_double4x4.hpp \
- /usr/include/glm/detail/type_mat4x4.hpp \
- /usr/include/glm/detail/type_mat4x4.inl \
- /usr/include/glm/ext/matrix_double4x4_precision.hpp \
- /usr/include/glm/ext/matrix_float4x4.hpp \
- /usr/include/glm/ext/matrix_float4x4_precision.hpp \
- /usr/include/glm/detail/func_matrix.inl /usr/include/glm/geometric.hpp \
- /usr/include/glm/detail/func_geometric.inl \
- /usr/include/glm/exponential.hpp /usr/include/glm/detail/type_vec1.hpp \
- /usr/include/glm/detail/type_vec1.inl \
- /usr/include/glm/detail/func_exponential.inl \
- /usr/include/glm/vector_relational.hpp \
- /usr/include/glm/detail/func_vector_relational.inl \
- /usr/include/glm/detail/_vectorize.hpp /usr/include/glm/common.hpp \
- /usr/include/glm/detail/func_common.inl \
- /usr/include/glm/detail/compute_common.hpp \
- /usr/include/glm/ext/matrix_double2x2_precision.hpp \
- /usr/include/glm/ext/matrix_float2x2.hpp \
- /usr/include/glm/ext/matrix_float2x2_precision.hpp \
- /usr/include/glm/trigonometric.hpp \
- /usr/include/glm/detail/func_trigonometric.inl \
- /usr/include/glm/packing.hpp /usr/include/glm/detail/func_packing.inl \
- /usr/include/glm/detail/type_half.hpp \
- /usr/include/glm/detail/type_half.inl /usr/include/glm/integer.hpp \
- /usr/include/glm/detail/func_integer.inl \
- /usr/include/glm/gtc/matrix_transform.hpp \
- /usr/include/glm/ext/matrix_projection.hpp \
- /usr/include/glm/gtc/constants.hpp \
- /usr/include/glm/ext/scalar_constants.hpp \
- /usr/include/glm/ext/scalar_constants.inl \
- /usr/include/glm/gtc/constants.inl \
- /usr/include/glm/ext/matrix_projection.inl \
- /usr/include/glm/ext/matrix_clip_space.hpp \
- /usr/include/glm/ext/matrix_clip_space.inl \
- /usr/include/glm/ext/matrix_transform.hpp \
- /usr/include/glm/ext/matrix_transform.inl \
- /usr/include/glm/gtc/matrix_transform.inl \
- /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/inc/texture.h \
- /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/inc/shader.h \
+ /usr/include/c++/11/cassert /usr/include/assert.h \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/fwd.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/type_int.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/setup.hpp \
+ /usr/include/c++/11/cstddef \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../simd/platform.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
+ /usr/include/c++/11/stdlib.h /usr/include/c++/11/cstdlib \
+ /usr/include/c++/11/cstdint \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/type_float.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/type_vec.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/precision.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/type_mat.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/vec2.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/type_vec2.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/type_vec2.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/vec3.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/type_vec3.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/type_vec3.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/vec4.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/type_vec4.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/type_vec4.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/type_vec4_simd.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/mat2x2.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/type_mat2x2.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/type_mat2x2.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/func_matrix.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../mat2x3.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/type_mat2x3.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/type_mat2x3.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../mat2x4.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/type_mat2x4.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/type_mat2x4.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../mat3x2.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/type_mat3x2.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/type_mat3x2.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../mat3x3.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/type_mat3x3.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/type_mat3x3.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../mat3x4.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/type_mat3x4.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/type_mat3x4.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../mat4x2.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/type_mat4x2.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/type_mat4x2.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../mat4x3.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/type_mat4x3.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/type_mat4x3.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../mat4x4.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/type_mat4x4.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/type_mat4x4.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/type_mat4x4_simd.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/func_matrix.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../geometric.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/func_geometric.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/func_geometric.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/func_exponential.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/type_vec1.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/type_vec1.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/func_exponential.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/func_vector_relational.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/func_vector_relational.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/func_vector_relational_simd.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/_vectorize.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/func_exponential_simd.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/../simd/exponential.h \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/func_common.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/_fixes.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/func_common.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/func_common_simd.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/../simd/common.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/immintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/x86gprintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/ia32intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/adxintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/bmiintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/bmi2intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/cetintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/cldemoteintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/clflushoptintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/clwbintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/clzerointrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/enqcmdintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/fxsrintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/lzcntintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/lwpintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/movdirintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitxintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/pconfigintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/popcntintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/pkuintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/rdseedintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/rtmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/serializeintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/sgxintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/tbmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/tsxldtrkintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/uintrintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/waitpkgintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/wbnoinvdintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/xsaveintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/xsavecintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/xsaveoptintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/xsavesintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/xtestintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/hresetintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/pmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/tmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/smmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/wmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avxintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avxvnniintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx2intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512erintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512pfintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512cdintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bwintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512dqintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vlbwintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vldqintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512ifmaintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512ifmavlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmiintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmivlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx5124fmapsintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx5124vnniwintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vpopcntdqintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmi2intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmi2vlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vnniintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vnnivlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vpopcntdqvlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bitalgintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vp2intersectintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vp2intersectvlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/shaintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/fmaintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/f16cintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/gfniintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/vaesintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/vpclmulqdqintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bf16vlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bf16intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/amxtileintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/amxint8intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/amxbf16intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/prfchwintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/keylockerintrin.h \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/func_geometric_simd.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../detail/../simd/geometric.h \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/func_matrix_simd.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../simd/matrix.h \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/trigonometric.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/func_trigonometric.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/func_trigonometric.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/func_trigonometric_simd.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/exponential.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/common.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/packing.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/func_packing.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/func_packing.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/type_half.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/type_half.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/func_packing_simd.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/matrix.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/vector_relational.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/integer.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/func_integer.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/func_integer.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/func_integer_simd.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/detail/../simd/integer.h \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/gtc/matrix_transform.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/gtc/../gtc/constants.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/gtc/../gtc/constants.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/gtc/matrix_transform.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/inc/texture.h \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/inc/shader.h \
  /usr/include/c++/11/string /usr/include/c++/11/bits/stringfwd.h \
  /usr/include/c++/11/bits/memoryfwd.h \
  /usr/include/c++/11/bits/char_traits.h \
@@ -277,9 +333,8 @@ CMakeFiles/gamedemo.dir/src/sprite_renderer.cpp.o: \
  /usr/include/c++/11/bits/functional_hash.h \
  /usr/include/c++/11/bits/hash_bytes.h \
  /usr/include/c++/11/bits/string_view.tcc \
- /usr/include/c++/11/ext/string_conversions.h /usr/include/c++/11/cstdlib \
- /usr/include/c++/11/cstdio /usr/include/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+ /usr/include/c++/11/ext/string_conversions.h /usr/include/c++/11/cstdio \
+ /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
@@ -291,37 +346,9 @@ CMakeFiles/gamedemo.dir/src/sprite_renderer.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /usr/include/glm/gtc/type_ptr.hpp /usr/include/glm/gtc/quaternion.hpp \
- /usr/include/glm/ext/vector_relational.hpp \
- /usr/include/glm/ext/vector_relational.inl \
- /usr/include/glm/detail/type_float.hpp \
- /usr/include/glm/ext/quaternion_common.hpp \
- /usr/include/glm/ext/quaternion_geometric.hpp \
- /usr/include/glm/ext/quaternion_geometric.inl \
- /usr/include/glm/ext/quaternion_common.inl \
- /usr/include/glm/ext/quaternion_float.hpp \
- /usr/include/glm/detail/type_quat.hpp \
- /usr/include/glm/ext/quaternion_relational.hpp \
- /usr/include/glm/ext/quaternion_relational.inl \
- /usr/include/glm/detail/type_quat.inl \
- /usr/include/glm/ext/quaternion_float_precision.hpp \
- /usr/include/glm/ext/quaternion_double.hpp \
- /usr/include/glm/ext/quaternion_double_precision.hpp \
- /usr/include/glm/ext/quaternion_trigonometric.hpp \
- /usr/include/glm/ext/quaternion_trigonometric.inl \
- /usr/include/glm/ext/quaternion_transform.hpp \
- /usr/include/glm/ext/quaternion_transform.inl \
- /usr/include/glm/gtc/quaternion.inl /usr/include/glm/gtc/epsilon.hpp \
- /usr/include/glm/detail/setup.hpp /usr/include/glm/gtc/epsilon.inl \
- /usr/include/glm/gtc/vec1.hpp /usr/include/glm/ext/vector_bool1.hpp \
- /usr/include/glm/ext/vector_bool1_precision.hpp \
- /usr/include/glm/ext/vector_float1.hpp \
- /usr/include/glm/ext/vector_float1_precision.hpp \
- /usr/include/glm/ext/vector_double1.hpp \
- /usr/include/glm/ext/vector_double1_precision.hpp \
- /usr/include/glm/ext/vector_int1.hpp \
- /usr/include/glm/ext/vector_int1_sized.hpp \
- /usr/include/glm/ext/vector_uint1.hpp \
- /usr/include/glm/ext/vector_uint1_sized.hpp /usr/include/c++/11/cstring \
- /usr/include/string.h /usr/include/strings.h \
- /usr/include/glm/gtc/type_ptr.inl
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/gtc/type_ptr.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/gtc/../gtc/quaternion.hpp \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/gtc/../gtc/quaternion.inl \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/gtc/../gtc/quaternion_simd.inl \
+ /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
+ /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glm/gtc/type_ptr.inl

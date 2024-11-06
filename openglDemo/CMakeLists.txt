@@ -11,16 +11,21 @@ set(CMAKE_SYSTEM_VERSION 1)
 set(CMAKE_CXX_COMPILE "g++")
 set(CMAKE_BUILD_TYPE Debug)
 
+set(GLAD_DIR ${PROJECT_SOURCE_DIR}/lib/glad/include)
+set(LIB_DIR ${PROJECT_SOURCE_DIR}/lib)
+
 set(PROJECT_BINARY_DIR ${PROJECT_SOURCE_DIR}/build)
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 
 include_directories(
+    ${LIB_DIR}
+    ${GLAD_DIR}
     ${OPENGL_INCLUDE_DIRS} 
     ${GLFW_INCLUDE_DIRS}  
     ${PROJECT_SOURCE_DIR}/inc
     )
 
 aux_source_directory(src/ DIR_LIB_SRCS)
-add_executable(gamedemo src/main.cpp src/glad/src/glad.c ${DIR_LIB_SRCS}) 
+add_executable(gamedemo src/main.cpp lib/glad/src/glad.c ${DIR_LIB_SRCS}) 
 
 target_link_libraries(gamedemo ${OPENGL_LIBRARIES} glfw) # 链接所需要的库文件

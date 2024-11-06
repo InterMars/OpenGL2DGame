@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/c++
 C_DEFINES = 
 
-C_INCLUDES = -I/home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/inc
+C_INCLUDES = -I/home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib -I/home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glad/include -I/home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/inc
 
 C_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo/inc
+CXX_INCLUDES = -I/home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib -I/home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/lib/glad/include -I/home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo/inc
 
 CXX_FLAGS = -g
 

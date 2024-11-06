@@ -1,4 +1,4 @@
-# Install script for directory: /home/hp/Code/opengl/GAME/OpenGL2DGame/openglDemo
+# Install script for directory: /home/sq/Code/OpenGL/Pacman/OpenGL2DGame/openglDemo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/hp/Code/opengl/GAME/OpenGL2DGame/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/sq/Code/OpenGL/Pacman/OpenGL2DGame/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
